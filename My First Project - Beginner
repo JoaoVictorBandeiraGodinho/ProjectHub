@@ -1,0 +1,125 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP7yfJxAlPMXvEGIijIFqJy",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/cepmgpadrepelagio/blob/main/My%20First%20Project%20-%20Beginner\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wrYl9bhF-HXx",
+        "outputId": "0979341a-8aff-423b-a091-3654ba5cb82f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Menor idade\n"
+          ]
+        }
+      ],
+      "source": [
+        "  idade = 10\n",
+        "  if idade < 18:\n",
+        "    print (\"Menor idade\")\n",
+        "  elif idade >= 18 and idade < 65:\n",
+        "    print (\"Adulto\")\n",
+        "  else:\n",
+        "    print (\"Idoso\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "    idade = int(input(\"Por favor, digite sua idade:\"))\n",
+        "    if idade < 12:\n",
+        "      print (\"Ola, bom dia. Temos ingressos disponiveis para assistir o Filme Peppa. Qual cadeira voce tem preferencia ?\")\n",
+        "    elif 12 >= idade < 18:\n",
+        "      print (\"Ola, bom dia. Temos 10 ingressos disponiveis para assistir 3 Ladroes e 1 bebe. Qual cadeira voce tem preferencia ?\")\n",
+        "    else:\n",
+        "      print (\"Ola, bom dia. Temos 20 ingressos disponiveis para assistir Frozen. Qual cadeira voce tem preferencia ?\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RVeeEcX5Hh0T",
+        "outputId": "367c72fd-96fb-432e-e2bf-87339223bba2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Por favor, digite sua idade:25\n",
+            "Ola, bom dia. Temos 20 ingressos disponiveis para assistir Frozen. Qual cadeira voce tem preferencia ?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Boletim Escolar\n",
+        "Nota_1= int(input(\"Por favor, coloque sua nota da Prova de Matematica: \"))\n",
+        "Nota_2= int(input(\"Por favor, coloque sua nota da Prova de Portugues: \"))\n",
+        "Media = (Nota_1 + Nota_2) / 2\n",
+        "\n",
+        "if Media >= 6:\n",
+        "    print(f'Sua media = {Media:.1f}' )\n",
+        "    print(\"Parabens, voce foi aprovado.\")\n",
+        "else:\n",
+        "    print(f'Sua media = {Media: .1f} ')\n",
+        "    print(\"Reprovado. Procure a direcao do colegio para mais informacoes.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "23DjCJp7Lmiz",
+        "outputId": "e2475420-f09e-4665-b769-c52d8bea6205"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Por favor, coloque sua nota da Prova de Matematica: 4\n",
+            "Por favor, coloque sua nota da Prova de Portugues: 5\n",
+            "Sua media =  4.5 \n",
+            "Reprovado. Procure a direcao do colegio para mais informacoes.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
