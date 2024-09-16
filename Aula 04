@@ -1,0 +1,216 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO3SSPNsko9aWXt8fG8lI2G",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/ProjectHub/blob/main/Aula%2004\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " # Funcao Len()\n",
+        "\n",
+        " # Cria uma lista de numeros\n",
+        " numeros = [1,2,3,4,5,6,True,'a',3,4,5]\n",
+        "\n",
+        " # Usa a funcao len() para calcular o comprimento da lista\n",
+        " comprimento = len(numeros)\n",
+        "\n",
+        " # Imprime o comprimento da lista\n",
+        " print(\"O Comprimento da lista e:\", comprimento)"
+      ],
+      "metadata": {
+        "id": "uaudHgUTMFIT"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " # Definindo uma funcao chamada \"soma\"\n",
+        " def soma(a,b):\n",
+        "  resultado = a + b\n",
+        "  return resultado"
+      ],
+      "metadata": {
+        "id": "d1ejQHE8NEQD"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "resultado_soma = soma(523213, 3)\n",
+        "\n",
+        "# Imprimindo o resultado\n",
+        "print(\"A soma de 5 e 3 e:\", resultado_soma)"
+      ],
+      "metadata": {
+        "id": "9mF2qi5aOZtx"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Definindo uma funcao chamada \"e_par\"\n",
+        "def e_par(numero):\n",
+        "  #operador modulo %\n",
+        "  if numero % 2 == 0:\n",
+        "    return True\n",
+        "  else:\n",
+        "    return False"
+      ],
+      "metadata": {
+        "id": "7s8zVGW1Ptqd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = 298931839281938\n",
+        "if e_par(numero):\n",
+        "  print(f\"{numero} e um numero par.\")\n",
+        "else:\n",
+        "  print(f\"{numero} e um numero impar\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "k-EyawnOQFx9",
+        "outputId": "e9c9de93-c1ad-4c39-ef77-8a7deb482b6a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "298931839281938 e um numero par.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = lambda a, b: a + b\n",
+        "resultado = soma(3, 4)\n",
+        "print(resultado)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qpkAaIIzSNEk",
+        "outputId": "1187565a-934b-4dc5-8dea-1f9ec3fc593a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Exercicio da aula\n",
+        "\n",
+        "# Sendo professor, necessito avaliar constantemente os estudantes, sendo assim\n",
+        "# quero automatizar a media de notas dos alunos.\n",
+        "\n",
+        "# Sabendo como e calcular a media, vamos dar um upgrade no primeiro codigo,\n",
+        "# utilizando o conhecimento dessa nossa unidade.\n",
+        "\n",
+        "# Lista de notas dos estudantes\n",
+        "\n",
+        "notas = [7.5, 8.0, 6.5, 9.0, 7.0]\n",
+        "\n",
+        "# Função regular para calcular a média\n",
+        "\n",
+        "def calcular_media(notas):\n",
+        "  total = sum(notas)\n",
+        "  media = total / len(notas)\n",
+        "  return media\n",
+        "\n",
+        " # Função lambda para arredondar a média para duas casas decimais\n",
+        "\n",
+        "arredondar_media = lambda media: round(media, 2)\n",
+        "\n",
+        "# Calcular a média\n",
+        "media = calcular_media(notas)\n",
+        "media_arredondada = arredondar_media(media)\n",
+        "\n",
+        "# Verificar se os estudantes foram aprovados\n",
+        "\n",
+        "situacao = if media_arredondada >= 7 else\n",
+        "\n",
+        "# Resultados\n",
+        "\n",
+        "print(, notas)\n",
+        "print(, media_arredondada)\n",
+        "print(, situacao)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "7N8vVlvcSc73",
+        "outputId": "425a3625-f29c-4bc2-fe60-2fc245a3b83b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (<ipython-input-72-d1c36cd1c4fd>, line 30)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-72-d1c36cd1c4fd>\"\u001b[0;36m, line \u001b[0;32m30\u001b[0m\n\u001b[0;31m    situacao = if media_arredondada >= 7 else\u001b[0m\n\u001b[0m               ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "6gBLXPL_WALV"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
