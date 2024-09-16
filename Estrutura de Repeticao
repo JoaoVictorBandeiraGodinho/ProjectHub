@@ -1,0 +1,67 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOqf4KppgQ1I0hES2w4sD94",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/ProjectHub/blob/main/Estrutura%20de%20Repeticao\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Magia do For\n",
+        "\n",
+        "numeros = [1,2,3,4,5]\n",
+        "\n",
+        "for num in numeros:\n",
+        "  print (num)"
+      ],
+      "metadata": {
+        "id": "CdqWMgiXGetE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Magia do While:\n",
+        "\n",
+        "numero = int(input(\"Digite um numero (ou 0 para sair):\"))\n",
+        "\n",
+        "while numero != 0:\n",
+        "  if numero % 2 == 0:\n",
+        "    print(\"Seu numero e par\")\n",
+        "  else:\n",
+        "    print(\"Seu numero e impar\")\n",
+        "\n",
+        "  numero = int(input(\"Digite um numero (ou 0 para sair):\"))\n"
+      ],
+      "metadata": {
+        "id": "uSLP1h9YJjBr"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
