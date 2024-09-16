@@ -1,0 +1,69 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPlC2thQjRHVmcTnotQEgbI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/ProjectHub/blob/main/Project%20Class%20%233%20-%20Classificacao%20de%20Filmes\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "filmes = [\"Filme 1\", \"Filme 2\", \"Filme 3\", \"Filme 4\", \"Filme 5\"]\n",
+        "\n",
+        "# Mensagens de boas vindas\n",
+        "\n",
+        "print(\"Seja bem vindo a classificacao de filmes\")\n",
+        "print(\"Caso voce nao queira dar uma nota aos nossos filmes, digite 0 para parar. \\n\")\n",
+        "\n",
+        "#Loop para iterar sobre cada filme na lista\n",
+        "for filme in filmes:\n",
+        "  #Solicitacao a classificacao ao usuario\n",
+        "  classificacao = input(f\"Como voce classificaria 'filme' de 1 a 5 ? (ou 0 para parar): \")\n",
+        "\n",
+        "  #Verificacao se o usuario deseja parar\n",
+        "  if classificacao == '0':\n",
+        "    print(\"Agradecemos pela sua atencao e tenha um otimo dia\")\n",
+        "    break #Encerra o loop principal\n",
+        "\n",
+        "  #Converte a classificacao para um numero inteiro\n",
+        "  classificacao = int(classificacao)\n",
+        "\n",
+        "  #Verifica se a classificacao esta dentro do intervalo valido\n",
+        "  if classificacao < 1 or classificacao > 5:\n",
+        "    print(\"Por favor, digite uma classificacao valida de 1 a 5.\")\n",
+        "  else:\n",
+        "      # Exibe a classificacao e passa para o proximo filme\n",
+        "      print(f\"Voce classificou '{filme}' com {classificacao} estrelas. \\n.\")\n",
+        "\n",
+        "# Mensagem de agradecimento ao finalizar\n",
+        "print(\"Obrigado por classificar os filmes!\")"
+      ],
+      "metadata": {
+        "id": "DQaRoHLV3_WY"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
