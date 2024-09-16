@@ -1,0 +1,97 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP2480aVu3CRBAv5Us/s7/L",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/ProjectHub/blob/main/Estrutura%20de%20Repeticao%20-%20For%20and%20While\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numeros = [1,2,3,4,5]\n",
+        "\n",
+        "for num in numeros:\n",
+        "  print (num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CdqWMgiXGetE",
+        "outputId": "4f95e533-22bc-4933-ae00-697a0e64a7a8"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Magia do While:\n",
+        "\n",
+        "numero = int(input(\"Digite um numero (ou 0 para sair):\"))\n",
+        "\n",
+        "while numero != 0:\n",
+        "  if numero % 2 == 0:\n",
+        "    print(\"Seu numero e par\")\n",
+        "  else:\n",
+        "    print(\"Seu numero e impar\")\n",
+        "\n",
+        "  numero = int(input(\"Digite um numero (ou 0 para sair):\"))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uSLP1h9YJjBr",
+        "outputId": "f1932d2e-7dd3-43d3-8e8a-5ae2ec573c21"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite um numero (ou 0 para sair):4\n",
+            "Seu numero e par\n",
+            "Digite um numero (ou 0 para sair):2\n",
+            "Seu numero e par\n",
+            "Digite um numero (ou 0 para sair):0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
