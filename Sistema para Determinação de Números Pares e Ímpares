@@ -1,0 +1,60 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMY71IMLtUPzi1NR43CR94D",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/cepmgpadrepelagio/blob/main/Sistema%20para%20Determina%C3%A7%C3%A3o%20de%20N%C3%BAmeros%20Pares%20e%20%C3%8Dmpares\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Numero = int(input(\"Digite um numero:\"))\n",
+        "resto = Numero % 2\n",
+        "\n",
+        "if resto == 0:\n",
+        "  print (\"Seu numero e par\")\n",
+        "else:\n",
+        "  print (\"Seu numero e impar\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3ObcYMjC-1HM",
+        "outputId": "08852f35-f24a-41ba-9e96-9ffde8ec49d9"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um numero:3\n",
+            "Seu numero e impar\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
