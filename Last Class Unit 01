@@ -1,0 +1,71 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNnsStbQ6nCfpT8CVMD0Dhd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/ProjectHub/blob/main/Last%20Class%20Unit%2001\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " # Solicita ao usuário que insira o valor do produto e o percentual de desconto\n",
+        "\n",
+        "valor_produto = float(input())\n",
+        "\n",
+        "percentual_desconto = float(input())\n",
+        "\n",
+        "\n",
+        "\n",
+        "# Verifica se o percentual de desconto está dentro dos limites aceitáveis (0-100%)\n",
+        "\n",
+        "if percentual_desconto < 0 or percentual_desconto > 100:\n",
+        "\n",
+        "    print()\n",
+        "\n",
+        "else:\n",
+        "\n",
+        "    # Calcula o valor do desconto\n",
+        "\n",
+        "    desconto = valor_produto * (percentual_desconto / 100)\n",
+        "\n",
+        "\n",
+        "\n",
+        "    # Calcula o valor final da compra\n",
+        "\n",
+        "    valor_final = valor_produto - desconto\n",
+        "\n",
+        "\n",
+        "\n",
+        "    # Exibe o valor final da compra\n",
+        "\n",
+        "    print(f{valor_final:.2f})"
+      ],
+      "metadata": {
+        "id": "sI6RvVCMEOi8"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
