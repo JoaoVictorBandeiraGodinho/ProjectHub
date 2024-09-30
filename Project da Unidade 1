@@ -1,0 +1,84 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPhZYOSu9iFA/Cppq1bq6hX",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/ProjectHub/blob/main/Project%20da%20Unidade%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Colocaremos alguns textos de boas vindas, e em seguida sera apresentada as materias, ao qual os alunos deverao inserir a nota.\n",
+        "\n",
+        "print (\"Ola, Alunos. Seja bem vindo ao Portal de Notas.\")\n",
+        "print (\"Para que possa obter sua media final, primeiro coloque sua nota da prova nas materias a seguir:\")\n",
+        "\n",
+        "Portugues = int(input(\"Digite sua nota de Portugues:\"))\n",
+        "Matematica = int(input(\"Digite sua nota de Matematica:\"))\n",
+        "Ciencias = int(input(\"Digite sua nota de Ciencias:\"))\n",
+        "Historia = int(input(\"Digite sua nota de Historia:\"))\n",
+        "\n",
+        "media = (Portugues + Matematica + Ciencias + Historia) / 4\n",
+        "print (f\"Sua media final e {media}\")\n",
+        "if media >= 7:\n",
+        "  print (\"Parabens, voce foi aprovado.\")\n",
+        "else:\n",
+        "  print (\"Voce foi reprovado. Por favor, procure a direcao do colegio.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mg3RJMOKV1uX",
+        "outputId": "31c367e9-fb1e-4676-e6f4-cd62849d0e7c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ola, Alunos. Seja bem vindo ao Portal de Notas.\n",
+            "Para que possa obter sua media final, primeiro coloque sua nota da prova nas materias a seguir:\n",
+            "Digite sua nota de Portugues:5\n",
+            "Digite sua nota de Matematica:4\n",
+            "Digite sua nota de Ciencias:3\n",
+            "Digite sua nota de Historia:2\n",
+            "Sua media final e 3.5\n",
+            "Voce foi reprovado. Por favor, procure a direcao do colegio.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "nxpsivcQaBBy"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
