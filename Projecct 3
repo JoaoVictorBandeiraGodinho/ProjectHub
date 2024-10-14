@@ -1,0 +1,192 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNx6NFwayFG1e+ahB6sFMok",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JoaoVictorBandeiraGodinho/ProjectHub/blob/main/Projecct%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "3mUH0wUSURAY",
+        "outputId": "a332417f-1ac1-4d2a-8e1c-d586dc9d7a90"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.10/dist-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.\n",
+            "  super().__init__(activity_regularizer=activity_regularizer, **kwargs)\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Epoch 1/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m6s\u001b[0m 313ms/step - accuracy: 0.5750 - loss: 1.0080 - val_accuracy: 0.6667 - val_loss: 0.9788\n",
+            "Epoch 2/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 33ms/step - accuracy: 0.6171 - loss: 0.9771 - val_accuracy: 0.7000 - val_loss: 0.9547\n",
+            "Epoch 3/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 41ms/step - accuracy: 0.6396 - loss: 0.9618 - val_accuracy: 0.6333 - val_loss: 0.9313\n",
+            "Epoch 4/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 25ms/step - accuracy: 0.6744 - loss: 0.9285 - val_accuracy: 0.6667 - val_loss: 0.9088\n",
+            "Epoch 5/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 54ms/step - accuracy: 0.6400 - loss: 0.9228 - val_accuracy: 0.6667 - val_loss: 0.8872\n",
+            "Epoch 6/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 43ms/step - accuracy: 0.6746 - loss: 0.8843 - val_accuracy: 0.7000 - val_loss: 0.8660\n",
+            "Epoch 7/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 34ms/step - accuracy: 0.6465 - loss: 0.8740 - val_accuracy: 0.7000 - val_loss: 0.8456\n",
+            "Epoch 8/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 37ms/step - accuracy: 0.6590 - loss: 0.8625 - val_accuracy: 0.7000 - val_loss: 0.8257\n",
+            "Epoch 9/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 73ms/step - accuracy: 0.6277 - loss: 0.8468 - val_accuracy: 0.7000 - val_loss: 0.8066\n",
+            "Epoch 10/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m1s\u001b[0m 49ms/step - accuracy: 0.6256 - loss: 0.8403 - val_accuracy: 0.7000 - val_loss: 0.7883\n",
+            "Epoch 11/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 30ms/step - accuracy: 0.6798 - loss: 0.8006 - val_accuracy: 0.7000 - val_loss: 0.7703\n",
+            "Epoch 12/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 31ms/step - accuracy: 0.7069 - loss: 0.7627 - val_accuracy: 0.7000 - val_loss: 0.7528\n",
+            "Epoch 13/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 79ms/step - accuracy: 0.6756 - loss: 0.7664 - val_accuracy: 0.7000 - val_loss: 0.7360\n",
+            "Epoch 14/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 75ms/step - accuracy: 0.6527 - loss: 0.7718 - val_accuracy: 0.7000 - val_loss: 0.7197\n",
+            "Epoch 15/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 58ms/step - accuracy: 0.6808 - loss: 0.7340 - val_accuracy: 0.7000 - val_loss: 0.7039\n",
+            "Epoch 16/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 39ms/step - accuracy: 0.6863 - loss: 0.7123 - val_accuracy: 0.7000 - val_loss: 0.6886\n",
+            "Epoch 17/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 67ms/step - accuracy: 0.6258 - loss: 0.7328 - val_accuracy: 0.7000 - val_loss: 0.6741\n",
+            "Epoch 18/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 43ms/step - accuracy: 0.6533 - loss: 0.7273 - val_accuracy: 0.7000 - val_loss: 0.6599\n",
+            "Epoch 19/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 24ms/step - accuracy: 0.6502 - loss: 0.7059 - val_accuracy: 0.7333 - val_loss: 0.6459\n",
+            "Epoch 20/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 56ms/step - accuracy: 0.7273 - loss: 0.6739 - val_accuracy: 0.7333 - val_loss: 0.6323\n",
+            "Epoch 21/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 60ms/step - accuracy: 0.7065 - loss: 0.6689 - val_accuracy: 0.7333 - val_loss: 0.6197\n",
+            "Epoch 22/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m1s\u001b[0m 85ms/step - accuracy: 0.6660 - loss: 0.6861 - val_accuracy: 0.7333 - val_loss: 0.6075\n",
+            "Epoch 23/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 31ms/step - accuracy: 0.6848 - loss: 0.6457 - val_accuracy: 0.7333 - val_loss: 0.5957\n",
+            "Epoch 24/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 13ms/step - accuracy: 0.6640 - loss: 0.6432 - val_accuracy: 0.7333 - val_loss: 0.5844\n",
+            "Epoch 25/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.7135 - loss: 0.6364 - val_accuracy: 0.7333 - val_loss: 0.5735\n",
+            "Epoch 26/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 12ms/step - accuracy: 0.7360 - loss: 0.6094 - val_accuracy: 0.7333 - val_loss: 0.5631\n",
+            "Epoch 27/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.7535 - loss: 0.6121 - val_accuracy: 0.7333 - val_loss: 0.5533\n",
+            "Epoch 28/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.7810 - loss: 0.6054 - val_accuracy: 0.7667 - val_loss: 0.5436\n",
+            "Epoch 29/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 12ms/step - accuracy: 0.8271 - loss: 0.5744 - val_accuracy: 0.7667 - val_loss: 0.5343\n",
+            "Epoch 30/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 12ms/step - accuracy: 0.7887 - loss: 0.6212 - val_accuracy: 0.8000 - val_loss: 0.5255\n",
+            "Epoch 31/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 14ms/step - accuracy: 0.7529 - loss: 0.5866 - val_accuracy: 0.8000 - val_loss: 0.5170\n",
+            "Epoch 32/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 14ms/step - accuracy: 0.7908 - loss: 0.5883 - val_accuracy: 0.8000 - val_loss: 0.5086\n",
+            "Epoch 33/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 14ms/step - accuracy: 0.7627 - loss: 0.5851 - val_accuracy: 0.8000 - val_loss: 0.5006\n",
+            "Epoch 34/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 17ms/step - accuracy: 0.7877 - loss: 0.5606 - val_accuracy: 0.8000 - val_loss: 0.4927\n",
+            "Epoch 35/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 15ms/step - accuracy: 0.7887 - loss: 0.5338 - val_accuracy: 0.8333 - val_loss: 0.4851\n",
+            "Epoch 36/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 12ms/step - accuracy: 0.7648 - loss: 0.5605 - val_accuracy: 0.8333 - val_loss: 0.4779\n",
+            "Epoch 37/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 13ms/step - accuracy: 0.8015 - loss: 0.5483 - val_accuracy: 0.8333 - val_loss: 0.4707\n",
+            "Epoch 38/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 12ms/step - accuracy: 0.7879 - loss: 0.5518 - val_accuracy: 0.8333 - val_loss: 0.4637\n",
+            "Epoch 39/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.8025 - loss: 0.5164 - val_accuracy: 0.8333 - val_loss: 0.4568\n",
+            "Epoch 40/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.8129 - loss: 0.5212 - val_accuracy: 0.8333 - val_loss: 0.4501\n",
+            "Epoch 41/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 12ms/step - accuracy: 0.7837 - loss: 0.5300 - val_accuracy: 0.8333 - val_loss: 0.4435\n",
+            "Epoch 42/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.7971 - loss: 0.4979 - val_accuracy: 0.8333 - val_loss: 0.4371\n",
+            "Epoch 43/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 13ms/step - accuracy: 0.8148 - loss: 0.4790 - val_accuracy: 0.8333 - val_loss: 0.4308\n",
+            "Epoch 44/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 13ms/step - accuracy: 0.7831 - loss: 0.4761 - val_accuracy: 0.8333 - val_loss: 0.4248\n",
+            "Epoch 45/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.8040 - loss: 0.4570 - val_accuracy: 0.8333 - val_loss: 0.4190\n",
+            "Epoch 46/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.7875 - loss: 0.5005 - val_accuracy: 0.8333 - val_loss: 0.4133\n",
+            "Epoch 47/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 12ms/step - accuracy: 0.7979 - loss: 0.4586 - val_accuracy: 0.8333 - val_loss: 0.4079\n",
+            "Epoch 48/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 11ms/step - accuracy: 0.7937 - loss: 0.4348 - val_accuracy: 0.8333 - val_loss: 0.4024\n",
+            "Epoch 49/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 15ms/step - accuracy: 0.7498 - loss: 0.4957 - val_accuracy: 0.8667 - val_loss: 0.3973\n",
+            "Epoch 50/50\n",
+            "\u001b[1m4/4\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 12ms/step - accuracy: 0.8081 - loss: 0.4419 - val_accuracy: 0.8667 - val_loss: 0.3920\n",
+            "\u001b[1m1/1\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 25ms/step - accuracy: 0.8667 - loss: 0.3920\n",
+            "Precisão no conjunto de teste: 0.8667\n",
+            "\u001b[1m1/1\u001b[0m \u001b[32m━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[37m\u001b[0m \u001b[1m0s\u001b[0m 52ms/step\n",
+            "[1 0 2 2 2 0 1 2 2 1 2 0 0 0 0 2 2 1 1 2 0 2 0 2 2 2 2 2 0 0]\n"
+          ]
+        }
+      ],
+      "source": [
+        "import tensorflow as tf\n",
+        "import pandas as pd\n",
+        "from sklearn.datasets import load_iris\n",
+        "from sklearn.model_selection import train_test_split\n",
+        "from sklearn.preprocessing import StandardScaler\n",
+        "iris = load_iris()\n",
+        "X = iris.data\n",
+        "y = iris.target\n",
+        "\n",
+        "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n",
+        "scaler = StandardScaler()\n",
+        "X_train = scaler.fit_transform(X_train)\n",
+        "X_test = scaler.transform(X_test)\n",
+        "\n",
+        "model = tf.keras.Sequential([\n",
+        "    tf.keras.layers.Dense(10, activation='relu', input_shape=(X_train.shape[1],)),\n",
+        "    tf.keras.layers.Dense(10, activation='relu'),\n",
+        "    tf.keras.layers.Dense(3, activation='softmax')\n",
+        "])\n",
+        "model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])\n",
+        "\n",
+        "model.fit(X_train, y_train, epochs=50, validation_data=(X_test, y_test))\n",
+        "test_loss, test_accuracy = model.evaluate(X_test, y_test)\n",
+        "print(f'Precisão no conjunto de teste: {test_accuracy:.4f}')\n",
+        "\n",
+        "predictions = model.predict(X_test)\n",
+        "predicted_classes = tf.argmax(predictions, axis=1)\n",
+        "print(predicted_classes.numpy())\n"
+      ]
+    }
+  ]
+}
